@@ -1,6 +1,6 @@
 package test;
 
-import com.koeller.FileReader;
+import main.java.FileReader;
 import org.junit.Test;
 
 import java.util.*;
