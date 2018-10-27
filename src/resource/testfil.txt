@@ -1,0 +1,2 @@
+Oppgaven kryptering med Cæsars kode brukes som alternativ til presentasjon av eget prosjekt når vi intervjuer utviklere til .NET-avdelingen.
+Oppgaven løses hjemme, og så tar man med koden man har skrevet og presenterer den på intervjuet.
