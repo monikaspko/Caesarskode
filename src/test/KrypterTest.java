@@ -7,9 +7,6 @@ import java.util.*;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by mko on 25.10.2018.
- */
 public class KrypterTest {
 
     public static final String[] testString = new String[]{"experience is the teacher of all things ",
@@ -22,6 +19,13 @@ public class KrypterTest {
     public void testabc() {
         FileReader reader = new FileReader();
         List<String> result = reader.krypter(createTestlinjer("abc"), 2);
+        assertEquals(Collections.singletonList("cde"), result);
+    }
+
+    @Test
+    public void testabcLand() {
+        FileReader reader = new FileReader();
+        List<String> result = reader.krypter(createTestlinjer("abc"), 31);
         assertEquals(Collections.singletonList("cde"), result);
     }
 
@@ -70,7 +74,7 @@ public class KrypterTest {
     }
 
     private List<String> createTestlinjer(String linje) {
-        List<String> testlinje = new ArrayList<String>();
+        List<String> testlinje = new ArrayList<>();
         testlinje.add(linje);
         return testlinje;
     }
